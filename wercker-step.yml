@@ -1,10 +1,14 @@
-box: alpine
-build:
-    # Steps make up the actions in your pipeline
-    # Read more about steps on our dev center:
-    # http://devcenter.wercker.com/docs/steps/index.html
-  steps:
-    - script:
-        name: echo
-        code: |
-          echo "hello world!"
+name: email-victoria
+version: 1.0.1
+description: Send Victoria an optionally friendly email. 
+keywords:
+- victoria
+- email
+- lel
+properties:
+  message:
+    type: string
+    required: true
+  friendly:
+    type: string
+    required: true
